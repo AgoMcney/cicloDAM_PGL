@@ -1,0 +1,350 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.agoney.comparaprecios.ActivityAgregar"
+    android:orientation="vertical"
+    android:weightSum="15"
+    >
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2"
+        android:theme="@style/CampoTextoPurpura"
+        >
+        <EditText
+            android:id="@+id/TxtInputNombre"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/name"
+            android:maxLines="1"
+            android:textColorHint="@color/colorHint"
+            />
+    </android.support.design.widget.TextInputLayout>
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2"
+        android:orientation="vertical"
+        >
+
+
+            <RadioGroup
+                android:id="@+id/RadioGroupFamilia"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                >
+
+
+            <RadioButton
+                android:id="@+id/RadioBtnFamilia1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="top"
+                android:layout_weight="1"
+                android:checked="false"
+                android:text="@string/familia1" />
+            <RadioButton
+                android:id="@+id/RadioBtnFamilia2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/RadioBtnFamilia1"
+                android:layout_weight="1"
+                android:checked="false"
+                android:text="@string/familia2" />
+            <RadioButton
+                android:id="@+id/RadioBtnFamilia3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/RadioBtnFamilia2"
+                android:layout_weight="1"
+                android:checked="false"
+                android:text="@string/familia3" />
+            <RadioButton
+                android:id="@+id/RadioBtnFamilia4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/RadioBtnFamilia3"
+                android:layout_weight="1"
+                android:checked="false"
+                android:text="@string/familia4" />
+            <RadioButton
+                android:id="@+id/RadioBtnFamilia5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/RadioBtnFamilia4"
+                android:layout_weight="1"
+                android:checked="false"
+                android:text="@string/familia5" />
+            <RadioButton
+                android:id="@+id/RadioBtnFamilia6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/RadioBtnFamilia5"
+                android:layout_weight="1"
+                android:checked="false"
+                android:text="@string/familia6" />
+
+
+                    <RadioButton
+                        android:id="@+id/RadioBtnFamilia7"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_toRightOf="@+id/RadioBtnFamilia1"
+                        android:layout_weight="1"
+                        android:checked="false"
+                        android:text="@string/familia7" />
+                    <RadioButton
+                        android:id="@+id/RadioBtnFamilia8"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:checked="false"
+                        android:text="@string/familia8"
+                        android:layout_toRightOf="@+id/RadioBtnFamilia2"
+                        android:layout_below="@+id/RadioBtnFamilia7"
+                        android:layout_alignLeft="@+id/RadioBtnFamilia7"
+                        />
+                    <RadioButton
+                        android:id="@+id/RadioBtnFamilia9"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:checked="false"
+                        android:text="@string/familia9"
+                        android:layout_below="@+id/RadioBtnFamilia8"
+                        android:layout_toRightOf="@+id/RadioBtnFamilia3"
+                        android:layout_alignLeft="@+id/RadioBtnFamilia8"
+                        />
+                    <RadioButton
+                        android:id="@+id/RadioBtnFamilia10"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:checked="false"
+                        android:text="@string/familia10"
+                        android:layout_below="@+id/RadioBtnFamilia9"
+                        android:layout_toRightOf="@+id/RadioBtnFamilia4"
+                        android:layout_alignLeft="@+id/RadioBtnFamilia9"
+                        />
+                    <RadioButton
+                        android:id="@+id/RadioBtnFamilia11"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignLeft="@+id/RadioBtnFamilia10"
+                        android:layout_below="@+id/RadioBtnFamilia10"
+                        android:layout_toRightOf="@+id/RadioBtnFamilia5"
+                        android:layout_weight="1"
+                        android:checked="false"
+                        android:text="@string/familia11" />
+                    <RadioButton
+                        android:id="@+id/RadioBtnFamilia12"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignLeft="@+id/RadioBtnFamilia11"
+                        android:layout_below="@+id/RadioBtnFamilia11"
+                        android:layout_toRightOf="@+id/RadioBtnFamilia6"
+                        android:layout_weight="1"
+                        android:checked="true"
+                        android:text="@string/familia12" />
+
+            </RadioGroup>
+
+
+
+    </HorizontalScrollView>
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="5"
+        android:layout_gravity="left"
+        >
+    <TableRow>
+        <TextView
+            android:id="@+id/txtTienda1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="5"
+            android:textSize="18sp"
+            android:text="@string/tienda1"
+            android:layout_column="1"
+            />
+        <EditText
+            android:id="@+id/editTextTienda1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="4"
+            android:ems="4"
+            android:hint="@string/precio"
+            android:inputType="numberDecimal"
+            android:textSize="14sp"
+            android:layout_column="2"
+            android:imeOptions="actionNext"
+            android:theme="@style/CampoTextoPurpura"
+            android:textColorHint="@color/colorHint"
+            />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/tienda2"
+            android:layout_weight="5"
+            android:id="@+id/txtTienda2"
+            android:textSize="18sp"
+            android:layout_column="3"
+            />
+
+        <EditText
+            android:id="@+id/editTextTienda2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="4"
+            android:ems="4"
+            android:hint="@string/precio"
+            android:inputType="numberDecimal"
+            android:textSize="14sp"
+            android:layout_column="4"
+            android:imeOptions="actionNext"
+            android:theme="@style/CampoTextoPurpura"
+            android:textColorHint="@color/colorHint"
+            />
+    </TableRow>
+
+    <TableRow>
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/tienda3"
+            android:layout_weight="5"
+            android:id="@+id/txtTienda3"
+            android:textSize="18sp"
+            android:layout_below="@+id/txtTienda2"
+            android:layout_column="1"
+            />
+        <EditText
+            android:id="@+id/editTextTienda3"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="4"
+            android:ems="4"
+            android:hint="@string/precio"
+            android:inputType="numberDecimal"
+            android:textSize="14sp"
+            android:layout_column="2"
+            android:imeOptions="actionNext"
+            android:theme="@style/CampoTextoPurpura"
+            android:textColorHint="@color/colorHint"
+            />
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/tienda4"
+            android:layout_weight="5"
+            android:id="@+id/txtTienda4"
+            android:textSize="18sp"
+            android:layout_column="3"
+            />
+        <EditText
+            android:id="@+id/editTextTienda4"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="4"
+            android:ems="4"
+            android:hint="@string/precio"
+            android:inputType="numberDecimal"
+            android:textSize="14sp"
+            android:layout_column="4"
+            android:imeOptions="actionNext"
+            android:theme="@style/CampoTextoPurpura"
+            android:textColorHint="@color/colorHint"
+            />
+    </TableRow>
+
+    <TableRow>
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/tienda5"
+            android:layout_weight="5"
+            android:id="@+id/txtTienda5"
+            android:textSize="18sp"
+            android:layout_column="1"
+            />
+        <EditText
+            android:id="@+id/editTextTienda5"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="4"
+            android:ems="6"
+            android:hint="@string/precio"
+            android:inputType="numberDecimal"
+            android:textSize="14sp"
+            android:layout_column="2"
+            android:imeOptions="actionNext"
+            android:theme="@style/CampoTextoPurpura"
+            android:textColorHint="@color/colorHint"
+            />
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/tienda6"
+            android:layout_weight="5"
+            android:id="@+id/txtTienda6"
+            android:textSize="18sp"
+            android:layout_column="3"
+            />
+        <EditText
+            android:id="@+id/editTextTienda6"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="4"
+            android:ems="6"
+            android:inputType="numberDecimal"
+            android:hint="@string/precio"
+            android:textSize="14sp"
+            android:layout_column="4"
+            android:imeOptions="actionNext"
+            android:theme="@style/CampoTextoPurpura"
+            android:textColorHint="@color/colorHint"
+             />
+    </TableRow>
+
+    </TableLayout>
+
+    <ImageButton
+        android:id="@+id/imageViewProducto"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="4"
+        android:contentDescription="@string/imagen"
+        app:srcCompat="@android:drawable/ic_input_add" />
+
+    <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="0dp"
+    android:layout_weight="2"
+    android:orientation="horizontal"
+    android:gravity="bottom"
+    >
+    <Button
+        android:id="@+id/btnGuardar"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/guardar"
+        android:layout_weight="1"
+        />
+    <Button
+        android:id="@+id/btnCancelar"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:layout_toRightOf="@id/btnGuardar"
+        android:text="@string/cancelar" />
+</LinearLayout>
+
+</LinearLayout>

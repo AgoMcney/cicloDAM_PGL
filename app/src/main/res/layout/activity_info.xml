@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.agoney.comparaprecios.ActivityInfo">
+    <Space
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_centerVertical="true" />
+    <TextView
+        android:id="@+id/textViewAutor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="\n App desarrollada para Android por: \n Agoney Suárez Martín \n"
+        android:textAlignment="center"
+        android:textSize="18sp" />
+    <Space
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_centerVertical="true"
+        android:layout_toLeftOf="@+id/textViewAutor"
+        android:layout_toStartOf="@+id/textViewAutor" />
+
+    <TextView
+        android:id="@+id/textViewDetalles"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textViewAutor"
+        android:layout_centerHorizontal="true"
+        android:text="Módulo PGL \n Ciclo Grado Superior \n Desarrollo de aplicaciones multiplataforma\n"
+        android:textAlignment="center"
+        android:textSize="18sp" />
+    <Space
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_centerVertical="true"
+        android:layout_toLeftOf="@+id/textViewDetalles"
+        android:layout_toStartOf="@+id/textViewDetalles" />
+    <TextView
+        android:id="@+id/textViewFecha"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textViewDetalles"
+        android:layout_centerHorizontal="true"
+        android:text="Realizado \n Octubre 2017 \n"
+        android:textAlignment="center"
+        android:textSize="18sp" />
+
+
+
+
+</RelativeLayout>
